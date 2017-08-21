@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgAdv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAdv"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <com.konnect.waptag2017.custom.EditTextCustom
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_man"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.konnect.waptag2017.custom.EditTextCustom
+                android:id="@+id/txtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_call"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.konnect.waptag2017.custom.EditTextCustom
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.konnect.waptag2017.custom.EditTextCustom
+                android:id="@+id/txtCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_stall"
+                android:drawablePadding="10dp"
+                android:hint="Company Name"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="LOGIN"
+                android:textColor="@color/grey_white_1000"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/txtSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_border_textview"
+        android:gravity="center"
+        android:text=" SKIP "
+        android:textColor="@color/grey_white_1000"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/tempView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

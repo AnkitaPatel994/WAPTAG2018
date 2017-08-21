@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgAdv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border_contact_us"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <com.konnect.waptag2017.custom.TextViewCustomBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="SPACE BOOKING"
+                    android:textColor="@color/grey_900"
+                    android:textSize="13dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Event organised &amp; managed by"
+                    android:textColor="@color/grey_800"
+                    android:textSize="12dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Moments Event &amp; Entertainment"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_moments_logo" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/grey_200" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Stall Booking"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:autoLink="phone"
+                    android:text=" +91 94290 15444"
+                    android:textColor="@color/grey_800"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Help Line"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:autoLink="phone"
+                    android:text="+91 94290 17444"
+                    android:textColor="@color/grey_800"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Email"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:autoLink="email"
+                    android:text="waptagexpo2017@gmail.com"
+                    android:textColor="@color/grey_800"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Follow us"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:autoLink="web"
+                    android:text="https://www.facebook.com/waptagexpo/"
+                    android:textColor="@color/grey_800"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Address"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="703- Dev Prime, Behind Divya Bhaskar,Prahladnagar, Ahmedabad."
+                    android:textColor="@color/grey_800"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <com.konnect.waptag2017.custom.TextViewCustomBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="CHINA"
+                android:textColor="@color/grey_900"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/china_flag" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:orientation="vertical">
+
+                    <com.konnect.waptag2017.custom.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Shanghai IBD"
+                        android:textColor="@color/grey_black_1000"
+                        android:textSize="16dp" />
+
+                    <com.konnect.waptag2017.custom.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="Shanghai, China"
+                        android:textColor="@color/grey_black_1000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:autoLink="email"
+                android:padding="4dp"
+                android:text="Email: nathan@ibdbiz.com"
+                android:textColor="@color/grey_black_1000"
+                android:textSize="14dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:autoLink="phone"
+                android:padding="4dp"
+                android:text="Contact: +86-13818649547"
+                android:textColor="@color/grey_black_1000"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <com.konnect.waptag2017.custom.TextViewCustomBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TAIWAN"
+                android:textColor="@color/grey_900"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/taiwan_flag" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:orientation="vertical">
+
+                    <com.konnect.waptag2017.custom.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:text="RSA Worldwide Expo Services Ltd."
+                        android:textColor="@color/grey_black_1000"
+                        android:textSize="16dp" />
+
+                    <com.konnect.waptag2017.custom.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="Taipei, Taiwan"
+                        android:textColor="@color/grey_black_1000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:autoLink="email"
+                android:padding="4dp"
+                android:text="Email: waptagexpo2017tw@gmail.com"
+                android:textColor="@color/grey_black_1000"
+                android:textSize="14dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:autoLink="phone"
+                android:padding="4dp"
+                android:text="Contact: +886-975189333"
+                android:textColor="@color/grey_black_1000"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border_contact_us"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_white_1000"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="App designed &amp; developed by"
+                    android:textColor="@color/grey_800"
+                    android:textSize="12dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qloo IT Solutions LLP"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="16dp" />
+
+                <com.konnect.waptag2017.custom.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:gravity="center"
+                    android:text="apps@qlooit.in"
+                    android:textColor="@color/grey_black_1000"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/colorPrimary" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp">-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Email"-->
+            <!--android:textColor="@color/grey_1000"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="7"-->
+            <!--android:autoLink="email"-->
+            <!--android:text="@string/qloo_mail"-->
+            <!--android:textColor="@color/grey_800"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp">-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Number"-->
+            <!--android:textColor="@color/grey_1000"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:id="@+id/txtEventLocation"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="7"-->
+            <!--android:autoLink="phone"-->
+            <!--android:text="@string/qloo_no"-->
+            <!--android:textColor="@color/grey_800"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp">-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Website"-->
+            <!--android:textColor="@color/grey_1000"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="7"-->
+            <!--android:autoLink="web"-->
+            <!--android:text="@string/qloo_site"-->
+            <!--android:textColor="@color/grey_800"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp">-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Address"-->
+            <!--android:textColor="@color/grey_1000"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+            <!--android:id="@+id/txtEventTime"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="7"-->
+            <!--android:text="@string/qloo_address"-->
+            <!--android:textColor="@color/grey_800"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

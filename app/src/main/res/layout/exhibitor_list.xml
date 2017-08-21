@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="#e2ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/indigo_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:id="@+id/txtCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_man"
+                android:drawablePadding="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/grey_900"
+                android:textSize="15dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:id="@+id/txtMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:autoLink="phone"
+                android:drawableLeft="@drawable/ic_call"
+                android:drawablePadding="5dp"
+                android:linksClickable="true"
+                android:paddingTop="5dp"
+                android:textColor="@color/grey_900"
+                android:textColorLink="@color/grey_900"
+                android:textSize="14dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:id="@+id/txtMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:autoLink="email"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/grey_900"
+                android:textColorLink="@color/grey_900"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtStall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_stall"
+                android:drawablePadding="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/grey_900"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/grey_900"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/indigo_500" />
+
+</LinearLayout>

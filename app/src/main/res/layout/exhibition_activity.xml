@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgAdv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+
+    <com.konnect.waptag2017.custom.EditTextCustom
+        android:id="@+id/searchBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color"
+        android:hint="Search by Company &amp; Contact person"
+        android:padding="10dp"
+        android:textColor="@color/grey_white_1000"
+        android:textColorHint="@color/grey_300"
+        android:visibility="gone"
+        android:textCursorDrawable="@null"
+        android:textSize="15dp" />
+
+    <ListView
+        android:id="@+id/listExhibitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:divider="@null"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>

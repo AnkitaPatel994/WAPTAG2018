@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgAdv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:id="@+id/eventLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2ffffff"
+        android:orientation="horizontal">
+        <!--e6ffffff-->
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/indigo_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="03 MARCH 2017"
+                android:textColor="@color/grey_900"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="9:30 AM - Opening"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="10:00 AM to 7:00 PM - Trade Show"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/indigo_500" />
+
+    <LinearLayout
+        android:id="@+id/eventLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/indigo_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="04 MARCH 2017"
+                android:textColor="@color/grey_900"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="9:00 AM to 5:00 PM - Trade Show"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="5:30 PM - Annual Convention"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="7:00 PM - Entertainment Evening"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="8:30 PM - Gala Dinner"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/indigo_500" />
+
+    <LinearLayout
+        android:id="@+id/eventLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/indigo_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="05 MARCH 2017"
+                android:textColor="@color/grey_900"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.konnect.waptag2017.custom.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="10 AM to 7 PM - Trade Show"
+                android:textColor="@color/grey_900"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/indigo_500" />
+
+</LinearLayout>

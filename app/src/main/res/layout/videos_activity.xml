@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgAdv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+
+    <ListView
+        android:id="@+id/listVideo"
+        android:layout_below="@+id/imgAdv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+    <com.konnect.waptag2017.custom.TextViewCustom
+        android:id="@+id/txtNoVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/grey_800"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

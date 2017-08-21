@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.konnect.waptag2017.custom.TextViewCustom
+        android:id="@+id/txtListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_600"
+        android:padding="10dp"
+        android:tag="sticky"
+        android:textColor="@color/grey_white_1000"
+        android:textSize="15dp" />
+
+</LinearLayout>

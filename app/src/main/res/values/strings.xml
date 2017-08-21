@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WAPTAG 2018</string>
+
+    <string name="rta_dialog_title">Rate this app</string>
+    <string name="rta_dialog_message">Like WAPTAG Expo 2018 app? Please rate us on Play Store and write your feedback there. </string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_cancel">Remind later</string>
+    <string name="rta_dialog_no">Not Now</string>
+
+    <string name="no_internet_connection">Requires Internet connection.</string>
+    <string name="title_events">Events</string>
+    <string name="title_map">Layout</string>
+    <string name="title_exhibitions">Exhibitors</string>
+    <string name="title_videos">Videos</string>
+    <string name="title_invite">Invite Guests</string>
+    <string name="verify_your_email_mobile_no">Verify your email/mobile no</string>
+    <string name="only_registered_exhibitions">Only registered Exhibitors can create an invitation. After creating the invitation, you can share the image on WhatsApp, Facebook or any other social media</string>
+    <string name="title_verify">Verification</string>
+    <string name="app_title">WAPTAG EXPO 2018</string>
+    <string name="title_contact">Contact us</string>
+    <string name="qloo_address">H-409, sumel business park 3(SAFAL-3), Near new cloth market, Raipur, Ahmedabad, Gujarat 380002</string>
+    <string name="qloo_site">www.konnectme.in</string>
+    <string name="qloo_no">07966170515</string>
+    <string name="qloo_mail">apps@qlooit.in</string>
+    <string name="title_attraction">Attractions</string>
+    <string name="title_transportation">Transportation</string>
+    <string name="title_visitors">Visitor Registration</string>
+    <string name="wait_for_time_out">Wait for timeout</string>
+    <string name="confirm_your_number">Confirm your number</string>
+    <string name="your_number_">your number ?</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="try_again">Please try again</string>
+    <string name="please_enter_code">Verification code</string>
+    <string name="please_enter_6_digit_code">Enter valid code</string>
+    <string name="verify_code_not_match">Code does not match</string>
+    <string name="resend_sms">Resend SMS</string>
+    <string name="resend">Resend</string>
+    <string name="visitor_register_text">Thank you for registering for WAPTAG Expo 2018. You will receive an SMS that you need to show at the registration desk on 3-4-5 March 2018 at Mahatma Mandir, Gandhinagar.</string>
+
+
+</resources>

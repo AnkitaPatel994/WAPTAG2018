@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSave"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingRight="10dp">
+
+    <View
+        android:id="@+id/first"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@color/grey_white_1000" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <com.konnect.waptag2017.custom.TextViewCustom
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/second"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="13dp" />
+
+</LinearLayout>
