@@ -15,7 +15,7 @@
             android:divider="@null"
             android:orientation="vertical" />
 
-        <com.konnect.waptag2017.custom.TextViewCustom
+        <com.ankita.waptag2018.custom.TextViewCustom
             android:id="@+id/txtNoEvent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

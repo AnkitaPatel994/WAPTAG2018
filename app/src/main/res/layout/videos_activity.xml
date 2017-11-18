@@ -11,20 +11,11 @@
         android:layout_height="50dp"
         android:scaleType="fitXY" />
 
-    <ListView
-        android:id="@+id/listVideo"
-        android:layout_below="@+id/imgAdv"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvVideo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@null" />
-
-    <com.konnect.waptag2017.custom.TextViewCustom
-        android:id="@+id/txtNoVideo"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@color/grey_800"
-        android:textSize="16dp"
-        android:visibility="gone" />
+        android:layout_below="@id/imgAdv"
+        android:paddingBottom="10dp"/>
 
 </RelativeLayout>

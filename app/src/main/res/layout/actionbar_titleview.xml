@@ -15,7 +15,7 @@
         android:src="@drawable/ic_waptag_expo_logo"
         android:visibility="gone" />
 
-    <com.konnect.waptag2017.custom.TextViewCustom
+    <com.ankita.waptag2018.custom.TextViewCustom
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

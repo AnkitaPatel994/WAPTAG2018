@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
-    <com.konnect.waptag2017.custom.TextViewCustom
+    <com.ankita.waptag2018.custom.TextViewCustom
         android:id="@+id/txtVideoTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

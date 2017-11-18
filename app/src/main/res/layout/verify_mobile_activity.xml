@@ -20,7 +20,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/ic_waptag_expo_logo" />
 
-    <com.konnect.waptag2017.custom.TextViewCustomBold
+    <com.ankita.waptag2018.custom.TextViewCustomBold
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -30,7 +30,7 @@
         android:textColor="@color/grey_white_1000"
         android:textSize="13dp" />
 
-    <com.konnect.waptag2017.custom.EditTextCustom
+    <com.ankita.waptag2018.custom.EditTextCustom
         android:id="@+id/edtMobileNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -33,7 +33,7 @@
             android:orientation="vertical"
             android:paddingTop="10dp">
 
-            <com.konnect.waptag2017.custom.EditTextCustom
+            <com.ankita.waptag2018.custom.EditTextCustom
                 android:id="@+id/txtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 android:textColorHint="@color/grey_600"
                 android:textSize="15dp" />
 
-            <com.konnect.waptag2017.custom.EditTextCustom
+            <com.ankita.waptag2018.custom.EditTextCustom
                 android:id="@+id/txtNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 android:textColorHint="@color/grey_600"
                 android:textSize="15dp" />
 
-            <com.konnect.waptag2017.custom.EditTextCustom
+            <com.ankita.waptag2018.custom.EditTextCustom
                 android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:textColorHint="@color/grey_600"
                 android:textSize="15dp" />
 
-            <com.konnect.waptag2017.custom.EditTextCustom
+            <com.ankita.waptag2018.custom.EditTextCustom
                 android:id="@+id/txtCompany"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,35 @@
                 android:textColorHint="@color/grey_600"
                 android:textSize="15dp" />
 
-            <com.konnect.waptag2017.custom.TextViewCustom
+            <com.ankita.waptag2018.custom.EditTextCustom
+                android:id="@+id/txtStall_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_stall"
+                android:drawablePadding="10dp"
+                android:hint="Stall No"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.ankita.waptag2018.custom.EditTextCustom
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="10dp"
+                android:hint="Location"
+                android:inputType="text|textCapWords"
+                android:textColor="@color/grey_black_1000"
+                android:textColorHint="@color/grey_600"
+                android:textSize="15dp" />
+
+            <com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtLogin"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"

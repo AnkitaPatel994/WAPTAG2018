@@ -25,7 +25,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_verification" />
 
-        <com.konnect.waptag2017.custom.TextViewCustom
+        <com.ankita.waptag2018.custom.TextViewCustom
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -35,7 +35,7 @@
             android:textColor="@android:color/white"
             android:textSize="16dp" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/editPwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:textColor="@color/text_color"
                 android:textSize="12sp">
 
-                <!--<com.konnect.waptag2017.custom.TextViewCustom-->
+                <!--<com.ankita.waptag2017.custom.TextViewCustom-->
                 <!--android:id="@+id/textResend"-->
                 <!--android:layout_width="fill_parent"-->
                 <!--android:layout_height="50dp"-->

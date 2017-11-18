@@ -16,7 +16,7 @@
             android:layout_height="50dp"
             android:scaleType="fitXY" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:textColorHint="@color/grey_600"
             android:textSize="15dp" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtCompany"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:textColorHint="@color/grey_600"
             android:textSize="15dp" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             android:textColorHint="@color/grey_600"
             android:textSize="15dp" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:textSize="15dp" />
 
 
-        <com.konnect.waptag2017.custom.TextViewCustom
+        <com.ankita.waptag2018.custom.TextViewCustom
             android:id="@+id/txtCountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             android:textColorHint="@color/grey_600"
             android:textSize="15dp" />
 
-        <com.konnect.waptag2017.custom.TextViewCustom
+        <com.ankita.waptag2018.custom.TextViewCustom
             android:id="@+id/txtState"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             android:textSize="15dp"
             android:visibility="gone" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtState"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
             android:textSize="15dp"
             android:visibility="gone" />
 
-        <com.konnect.waptag2017.custom.EditTextCustom
+        <com.ankita.waptag2018.custom.EditTextCustom
             android:id="@+id/edtCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -139,8 +139,7 @@
             android:textColorHint="@color/grey_600"
             android:textSize="15dp" />
 
-
-        <com.konnect.waptag2017.custom.TextViewCustom
+        <com.ankita.waptag2018.custom.TextViewCustom
             android:id="@+id/txtBusCat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

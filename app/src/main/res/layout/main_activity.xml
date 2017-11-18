@@ -47,7 +47,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_attr" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img4"
                         android:text="ATTRACTIONS" />
@@ -73,7 +73,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_event" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img1"
                         android:text="EVENTS" />
@@ -92,7 +92,7 @@
                         android:padding="12dp"
                         android:src="@drawable/ic_layout" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img2"
                         android:text="LAYOUT" />
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_exhibitor" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img3"
                         android:text="EXHIBITORS" />
@@ -142,7 +142,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_video" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img5"
                         android:text="VIDEOS" />
@@ -163,7 +163,7 @@
                         android:padding="10dp"
                         android:src="@drawable/ic_transport" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img6"
                         android:text="SPONSERS" />
@@ -199,7 +199,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_invite" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img7"
                         android:text="INVITE" />
@@ -217,7 +217,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_visitor" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img9"
                         android:text="VISITORS" />
@@ -242,7 +242,7 @@
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_contact" />
 
-                    <com.konnect.waptag2017.custom.TextViewCustom
+                    <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img8"
                         android:text="CONTACT US" />

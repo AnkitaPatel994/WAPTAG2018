@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.konnect.waptag2017">
+    package="com.ankita.waptag2018">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,7 +16,7 @@
         android:largeHeap="true"
         android:supportsRtl="true">
         <activity
-            android:name=".splash.SplashActivity"
+            android:name="com.ankita.waptag2018.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -26,76 +26,76 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login.LoginActivity"
+            android:name="com.ankita.waptag2018.login.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.ankita.waptag2018.main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".event.EventActivity"
+            android:name="com.ankita.waptag2018.event.EventActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".event.SingleEventActivity"
+            android:name="com.ankita.waptag2018.event.SingleEventActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".map.MapsActivity"
+            android:name="com.ankita.waptag2018.map.MapsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".exhibition.ExhibitorsActivity"
+            android:name="com.ankita.waptag2018.exhibition.ExhibitorsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".videos.VideosActivity"
+            android:name="com.ankita.waptag2018.videos.VideosActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".videos.VideoViewActivity"
+            android:name="com.ankita.waptag2018.videos.VideoViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".invite.InviteActivity"
+            android:name="com.ankita.waptag2018.invite.InviteActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".invite.VerifyExhibitorPwdActivity"
+            android:name="com.ankita.waptag2018.invite.VerifyExhibitorPwdActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".contactus.ContactUsActivity"
+            android:name="com.ankita.waptag2018.contactus.ContactUsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".custom.CropperActivity"
+            android:name="com.ankita.waptag2018.custom.CropperActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".attraction.AttractionActivity"
+            android:name="com.ankita.waptag2018.attraction.AttractionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".transportation.TransportationActivity"
+            android:name="com.ankita.waptag2018.transportation.TransportationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".visitor.VisitorsActivity"
+            android:name="com.ankita.waptag2018.visitor.VisitorsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".invite.StickerActivity"
+            android:name="com.ankita.waptag2018.invite.StickerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".invite.VerifyExhibitorMobileActivity"
+            android:name="com.ankita.waptag2018.invite.VerifyExhibitorMobileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".map.LayoutActivity"
+            android:name="com.ankita.waptag2018.map.LayoutActivity"
             android:theme="@style/AppTheme" />
     </application>
 

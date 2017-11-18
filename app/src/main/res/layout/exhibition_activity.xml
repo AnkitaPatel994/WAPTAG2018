@@ -10,7 +10,7 @@
         android:layout_height="50dp"
         android:scaleType="fitXY" />
 
-    <com.konnect.waptag2017.custom.EditTextCustom
+    <com.ankita.waptag2018.custom.EditTextCustom
         android:id="@+id/searchBox"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

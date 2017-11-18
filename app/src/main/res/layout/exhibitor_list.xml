@@ -24,7 +24,7 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <com.konnect.waptag2017.custom.TextViewCustom
+            <com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtCompany"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
-            <com.konnect.waptag2017.custom.TextViewCustom
+            <com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:textColor="@color/grey_900"
                 android:textSize="15dp" />
 
-            <com.konnect.waptag2017.custom.TextViewCustom
+            <com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtMobile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:textColorLink="@color/grey_900"
                 android:textSize="14dp" />
 
-            <com.konnect.waptag2017.custom.TextViewCustom
+            <com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtMail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
