@@ -3,6 +3,7 @@ package com.ankita.waptag2018.videos;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -42,7 +43,7 @@ public class VideosActivity extends BaseAppCompatActivity {
         rvVideo = (RecyclerView)findViewById(R.id.rvVideo);
         rvVideo.setHasFixedSize(true);
 
-        RecyclerView.LayoutManager rvVideoManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        RecyclerView.LayoutManager rvVideoManager = new GridLayoutManager(getApplicationContext(), 2);
         rvVideo.setLayoutManager(rvVideoManager);
 
         if (isNetworkAvailable(getApplicationContext()))

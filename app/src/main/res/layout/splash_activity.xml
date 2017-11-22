@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/write_50">
 
-    <!--<ImageView-->
-        <!--android:id="@+id/imgSplash"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:src="@drawable/ic_splash"-->
-        <!--android:scaleType="fitXY"-->
-        <!--android:layout_centerInParent="true" />-->
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:src="@drawable/ic_center"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

@@ -15,14 +15,14 @@ public class SplashActivity extends BaseAppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        setUpfullScreen();
+        //setUpfullScreen();
 
         setContentView(R.layout.splash_activity);
 
-        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-        finish();
+        /*startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+        finish();*/
 
-//        initControl();
+       initControl();
 
     }
 

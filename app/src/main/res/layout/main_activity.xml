@@ -159,14 +159,15 @@
 
                     <ImageView
                         android:id="@+id/img6"
+                        android:layout_height="75dp"
+                        android:layout_width="75dp"
                         style="@style/main_screen_image"
-                        android:padding="10dp"
-                        android:src="@drawable/ic_transport" />
+                        android:src="@drawable/ic_sponsors" />
 
                     <com.ankita.waptag2018.custom.TextViewCustom
                         style="@style/main_screen_text"
                         android:layout_below="@+id/img6"
-                        android:text="SPONSERS" />
+                        android:text="SPONSORS" />
 
                     <View
                         android:layout_width="match_parent"

@@ -50,18 +50,18 @@ public class ExhibitorListAdapter extends BaseAdapter {
             holder = new ViewHolder();
             convertView = inflater.inflate(R.layout.exhibitor_list, parent, false);
             holder.txtCompany = (TextView) convertView.findViewById(R.id.txtCompany);
-            holder.txtName = (TextView) convertView.findViewById(R.id.txtName);
+            /*holder.txtName = (TextView) convertView.findViewById(R.id.txtName);
             holder.txtMobile = (TextView) convertView.findViewById(R.id.txtMobile);
             holder.txtMail = (TextView) convertView.findViewById(R.id.txtMail);
             holder.txtStall = (TextView) convertView.findViewById(R.id.txtStall);
-            holder.txtAdd = (TextView) convertView.findViewById(R.id.txtAdd);
+            holder.txtAdd = (TextView) convertView.findViewById(R.id.txtAdd);*/
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
         holder.txtCompany.setText(exhibitor_list.get(position).getCompanyName());
-        if (exhibitor_list.get(position).getName().isEmpty()) {
+        /*if (exhibitor_list.get(position).getName().isEmpty()) {
             holder.txtName.setVisibility(View.GONE);
         } else {
             holder.txtName.setVisibility(View.VISIBLE);
@@ -85,14 +85,14 @@ public class ExhibitorListAdapter extends BaseAdapter {
         } else {
             holder.txtAdd.setVisibility(View.VISIBLE);
             holder.txtAdd.setText(exhibitor_list.get(position).getLocation());
-        }
+        }*/
 
         return convertView;
     }
 
     class ViewHolder {
 
-        private TextView txtCompany, txtMobile;
-        private TextView txtName, txtMail, txtStall, txtAdd;
+        private TextView txtCompany;
+        //private TextView txtName, txtMail, txtStall, txtAdd, txtMobile;
     }
 }

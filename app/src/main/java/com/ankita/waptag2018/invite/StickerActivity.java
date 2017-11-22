@@ -58,7 +58,6 @@ public class StickerActivity extends BaseAppCompatActivity {
         txtName.setText(getPref(PREF_STICKER_COMPANY, ""));
         txtStall.setText(getPref(PREF_STICKER_STALL, ""));
 
-
     }
 
     @Override

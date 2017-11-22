@@ -48,12 +48,13 @@ class TransportationListAdapter extends RecyclerView.Adapter<TransportationListA
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        String title = transportationListArray.get(position).get("title");
-        String description = transportationListArray.get(position).get("description");
+        /*String title = transportationListArray.get(position).get("title");
+        String description = transportationListArray.get(position).get("description");*/
+
         String image = transportationListArray.get(position).get("image");
 
-        holder.tvTransportationTitle.setText(title);
-        holder.tvTransportationDescription.setText(description);
+        /*holder.tvTransportationTitle.setText(title);
+        holder.tvTransportationDescription.setText(description);*/
 
         DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheOnDisc(true).cacheInMemory(true)
@@ -84,14 +85,14 @@ class TransportationListAdapter extends RecyclerView.Adapter<TransportationListA
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvTransportationTitle,tvTransportationDescription;
+        /*TextView tvTransportationTitle,tvTransportationDescription;*/
         ImageView ivTransportation;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            tvTransportationTitle = (TextView)itemView.findViewById(R.id.tvTransportationTitle);
-            tvTransportationDescription = (TextView)itemView.findViewById(R.id.tvTransportationDescription);
+            /*tvTransportationTitle = (TextView)itemView.findViewById(R.id.tvTransportationTitle);
+            tvTransportationDescription = (TextView)itemView.findViewById(R.id.tvTransportationDescription);*/
 
             ivTransportation = (ImageView)itemView.findViewById(R.id.ivTransportation);
         }

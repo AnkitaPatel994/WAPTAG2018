@@ -91,12 +91,8 @@ public class TransportationActivity extends BaseAppCompatActivity {
                         HashMap<String,String > hashMap = new HashMap<>();
 
                         String image = jo.getString("image");
-                        String title = jo.getString("title");
-                        String description = jo.getString("description");
 
                         hashMap.put("image",image);
-                        hashMap.put("title",title);
-                        hashMap.put("description",description);
 
                         TransportationListArray.add(hashMap);
                     }

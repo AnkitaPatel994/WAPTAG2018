@@ -33,10 +33,10 @@ import android.widget.Toast;
 import com.ankita.waptag2018.interfaces.Constant;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
-import com.ankita.waptag2018.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -47,7 +47,7 @@ public class BaseAppCompatActivity extends AppCompatActivity implements Constant
     public SharedPreferences preferencesVal;
     public SharedPreferences.Editor editor;
     private DialogPlus dialog;
-    int imagesToShow[] = {R.drawable.ads1, R.drawable.ads2, R.drawable.ads3, R.drawable.ads4, R.drawable.ads5, R.drawable.ads6, R.drawable.ads7, R.drawable.ads8, R.drawable.ads9, R.drawable.ads10, R.drawable.ads11, R.drawable.ads12, R.drawable.ads13};
+    ArrayList<Integer> imagesToShow = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,6 +55,17 @@ public class BaseAppCompatActivity extends AppCompatActivity implements Constant
 
         preferencesVal = PreferenceManager
                 .getDefaultSharedPreferences(getApplicationContext());
+
+        imagesToShow.add(R.drawable.ad1);
+        imagesToShow.add(R.drawable.ad2);
+        imagesToShow.add(R.drawable.ad3);
+        imagesToShow.add(R.drawable.ad4);
+        imagesToShow.add(R.drawable.ad5);
+        imagesToShow.add(R.drawable.ad6);
+        imagesToShow.add(R.drawable.ad7);
+        imagesToShow.add(R.drawable.ad9);
+        imagesToShow.add(R.drawable.ad9);
+        imagesToShow.add(R.drawable.ad10);
 
     }
 
@@ -263,14 +274,14 @@ public class BaseAppCompatActivity extends AppCompatActivity implements Constant
     }
 
 
-    private void animate(final ImageView imageView, final int images[], final int imageIndex, final boolean forever) {
+    private void animate(final ImageView imageView, final ArrayList<Integer> images, final int imageIndex, final boolean forever) {
 
         int fadeInDuration = 500; // Configure time values here
         int timeBetween = 4000;
         int fadeOutDuration = 1000;
 deBug("Index "+imageIndex);
         imageView.setVisibility(View.INVISIBLE);    //Visible or invisible by default - this will apply when the animation ends
-        imageView.setImageResource(images[imageIndex - 1]);
+        imageView.setImageResource(images.get(imageIndex - 1));
 
         Animation fadeIn = new AlphaAnimation(0, 1);
         fadeIn.setInterpolator(new DecelerateInterpolator()); // add this
@@ -294,7 +305,7 @@ deBug("Index "+imageIndex);
 
         animation.setAnimationListener(new Animation.AnimationListener() {
             public void onAnimationEnd(Animation animation) {
-                if (images.length > imageIndex) {
+                if (images.size() > imageIndex) {
                     if (imageIndex + 1 == 14) {
                         updatePref("ads_waptag_count", String.valueOf(1));
                     } else

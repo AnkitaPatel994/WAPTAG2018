@@ -15,9 +15,9 @@ public interface Constant {
     public static final String PREF_EXHIBITORS_DATE = "pref_waptag_exhibitors_date";
     public static final String PREF_EXHIBITOR_LIST = "pref_waptag_exhibitor_list";
 
-    public static final String API_GET_LAYOUT = "get_layout.php";
 
-    public static final String WEB_KEY = "http://waptag.org/waptag/Webservices/";
+
+    public static final String WEB_KEY = "http://waptag.momentswedding.in/webservices/";
     public static final String API_FETCH_ATTRACTIONS ="fetchAttractions";
     public static final String API_FETCH_VIDEO ="fetchVideo";
     public static final String API_FETCH_SPONCER ="fetchSponcer";
@@ -27,5 +27,6 @@ public interface Constant {
     public static final String API_EXHIBITOR_MOBILE_VERIFY = "sendOTP";
     public static final String API_RESEND_EXHIBITORS_OTP = "sendOTP";
     public static final String API_VERIFY_EXHIBITOR = "verifyOTP";
+    public static final String API_GET_LAYOUT = "fetchLayout";
 
 }

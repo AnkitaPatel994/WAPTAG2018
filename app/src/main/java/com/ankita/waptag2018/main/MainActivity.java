@@ -11,19 +11,14 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.andexert.library.RippleView;
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.RetryPolicy;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.Volley;
 import com.ankita.waptag2018.BaseAppCompatActivity;
+import com.ankita.waptag2018.Postdata;
 import com.ankita.waptag2018.R;
 import com.ankita.waptag2018.attraction.AttractionActivity;
 import com.ankita.waptag2018.contactus.ContactUsActivity;
@@ -38,7 +33,6 @@ import com.ankita.waptag2018.map.LayoutActivity;
 import com.ankita.waptag2018.transportation.TransportationActivity;
 import com.ankita.waptag2018.videos.VideosActivity;
 import com.ankita.waptag2018.visitor.VisitorsActivity;
-import com.ankita.waptag2018.volleyRequest.CustomRequest;
 import com.vansuita.library.CheckNewAppVersion;
 
 import org.json.JSONException;
@@ -51,9 +45,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
 
 /**
  * Created by qlooit-9 on 9/11/16.
@@ -151,12 +142,20 @@ public class MainActivity extends BaseAppCompatActivity {
             @Override
             public void onComplete(RippleView rippleView) {
 
-                if (getPref("offline_img_view", "f").equals("f")) {
+                //startActivity(new Intent(getApplicationContext(), LayoutActivity.class));
+
+                if (getPref("offline_img_view", "f").equals("f"))
+                {
                     startActivity(new Intent(getApplicationContext(), LayoutActivity.class));
                     updatePref("offline_img_view", "t");
-                } else {
-                    if (isNetworkAvailable(getApplicationContext()))
-                        callImageApi(getPref(PREF_LAYOUT_DATE, "0"));
+                }
+                else
+                {
+                    if (isNetworkAvailable(getApplicationContext())){
+
+                        GetLayoutimage getLayoutimage = new GetLayoutimage();
+                        getLayoutimage.execute();
+                    }
                     else {
                         File f = new File(Environment.getExternalStorageDirectory() + "/WAPTAG/layout.jpg");
                         if (f.exists())
@@ -237,49 +236,56 @@ public class MainActivity extends BaseAppCompatActivity {
         }
     }
 
-    private void callImageApi(String pref) {
-        startDialog();
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String url = WEB_KEY + API_GET_LAYOUT;
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("date", pref);
-        CustomRequest jsObjRequest = new CustomRequest(Request.Method.POST, url, params, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                closeDialog();
-                try {
-                    String error = response.getString("error");
-                    String message = response.getString("message");
-                    if (error.toUpperCase(Locale.US).equals("FALSE") && message.equals("done")) {
-                        JSONObject jsonObject = response.getJSONObject("data");
-                        updatePref(PREF_LAYOUT_DATE, jsonObject.getString("updated_at"));
-                        callHtmlService(jsonObject.getString("image_path"));
-                    } else if (error.toUpperCase(Locale.US).equals("FALSE") && message.equals("already")) {
-                        File f = new File(Environment.getExternalStorageDirectory() + "/WAPTAG/layout.jpg");
-                        if (f.exists())
-                            startActivity(new Intent(getApplicationContext(), LayoutActivity.class));
-                        else
-                            callImageApi("0");
-                    } else {
-                        alertBox(message);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+    private class GetLayoutimage extends AsyncTask<String,Void,String> {
+
+        String status,message,image;
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            startDialog();
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            JSONObject joLayout=new JSONObject();
+            try {
+                Postdata postdata=new Postdata();
+                String pdLayout = postdata.post(WEB_KEY+API_GET_LAYOUT,joLayout.toString());
+                JSONObject j=new JSONObject(pdLayout);
+                status=j.getString("status");
+                if(status.equals("1"))
+                {
+                    Log.d("Like","Successfully");
+                    message=j.getString("message");
+                    JSONObject jo=j.getJSONObject("Layout");
+                    image =jo.getString("image");
+
                 }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                closeDialog();
-                preToast(getString(R.string.try_again));
-            }
-        });
+                else
+                {
+                    message=j.getString("message");
+                }
 
-        int socketTimeout = 60000;//60 seconds - change to what you want
-        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-        jsObjRequest.setRetryPolicy(policy);
-        requestQueue.add(jsObjRequest);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
 
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            closeDialog();
+            if(status.equals("1"))
+            {
+                callHtmlService(image);
+            }
+            else
+            {
+                alertBox(message);
+            }
+        }
     }
 
     private void callHtmlService(String image_path) {
@@ -463,6 +469,7 @@ public class MainActivity extends BaseAppCompatActivity {
 
         return super.onOptionsItemSelected(menuItem);
     }
+
 
 }
 

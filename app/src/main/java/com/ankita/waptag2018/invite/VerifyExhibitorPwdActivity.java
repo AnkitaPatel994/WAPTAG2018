@@ -230,15 +230,12 @@ public class VerifyExhibitorPwdActivity extends BaseAppCompatActivity {
         String textPwd = editPwd.getText().toString().trim();
         if (textPwd.length() == 0) {
             preToast(getResources().getString(R.string.please_enter_code));
-        } else if (textPwd.length() != 6) {
-            preToast(getResources().getString(R.string.please_enter_6_digit_code));
         } else {
             if (isNetworkAvailable(getApplicationContext()))
             {
                 GetOTPVerify getOTPVerify = new GetOTPVerify();
                 getOTPVerify.execute();
 
-                //callOTPAPI();
             }
             else
             {
@@ -308,53 +305,6 @@ public class VerifyExhibitorPwdActivity extends BaseAppCompatActivity {
             }
         }
     }
-
-    /*private void callOTPAPI() {
-
-        startDialog();
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String url = WEB_KEY + API_VERIFY_EXHIBITOR;
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("mobile", getPref(PREF_USER_MOBILE, ""));
-        params.put("otp", editPwd.getText().toString().trim());
-        CustomRequest jsObjRequest = new CustomRequest(Request.Method.POST, url, params, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                closeDialog();
-                try {
-                    String error = response.getString("error");
-                    String message = response.getString("message");
-                    if (error.toUpperCase(Locale.US).equals("FALSE") && message.equals("done")) {
-                        updatePref(PREF_OTP, "true");
-                        JSONObject jsonObject = response.getJSONObject("data");
-                        Intent i = new Intent(getApplicationContext(), InviteActivity.class);
-                        updatePref(PREF_STICKER_COMPANY, jsonObject.getString("company_name"));
-                        updatePref(PREF_STICKER_STALL, jsonObject.getString("stall_no"));
-                        startActivity(i);
-                        finish();
-                    } else {
-                        alertBox(message);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                closeDialog();
-                preToast(getString(R.string.try_again));
-            }
-        });
-
-        int socketTimeout = 60000;//60 seconds - change to what you want
-        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-        jsObjRequest.setRetryPolicy(policy);
-        requestQueue.add(jsObjRequest);
-
-
-    }*/
-
 
     private Date addMinutesToDate(int minutes, Date beforeTime) {
         long ONE_MINUTE_IN_MILLIS = 60000;// millisecs

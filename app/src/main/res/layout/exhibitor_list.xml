@@ -33,7 +33,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
-            <com.ankita.waptag2018.custom.TextViewCustom
+            <!--<com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,9 +43,9 @@
                 android:drawablePadding="5dp"
                 android:paddingTop="5dp"
                 android:textColor="@color/grey_900"
-                android:textSize="15dp" />
+                android:textSize="15dp" />-->
 
-            <com.ankita.waptag2018.custom.TextViewCustom
+            <!--<com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtMobile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,9 +58,9 @@
                 android:paddingTop="5dp"
                 android:textColor="@color/grey_900"
                 android:textColorLink="@color/grey_900"
-                android:textSize="14dp" />
+                android:textSize="14dp" />-->
 
-            <com.ankita.waptag2018.custom.TextViewCustom
+            <!--<com.ankita.waptag2018.custom.TextViewCustom
                 android:id="@+id/txtMail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,9 +72,9 @@
                 android:paddingTop="5dp"
                 android:textColor="@color/grey_900"
                 android:textColorLink="@color/grey_900"
-                android:textSize="14dp" />
+                android:textSize="14dp" />-->
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/txtStall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,9 +85,9 @@
                 android:paddingTop="5dp"
                 android:textColor="@color/grey_900"
                 android:textSize="14dp"
-                android:textStyle="bold" />
+                android:textStyle="bold" />-->
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/txtAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:drawablePadding="5dp"
                 android:paddingTop="5dp"
                 android:textColor="@color/grey_900"
-                android:textSize="14dp" />
+                android:textSize="14dp" />-->
 
 
         </LinearLayout>
