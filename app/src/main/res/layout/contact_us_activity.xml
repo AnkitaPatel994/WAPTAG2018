@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
                     android:autoLink="phone"
-                    android:text=" +91 94290 15444"
+                    android:text=" +91 70696 18444"
                     android:textColor="@color/grey_800"
                     android:textSize="14dp" />
 

@@ -31,6 +31,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
                 android:textSize="20dp" />
 
             <!--<com.ankita.waptag2018.custom.TextViewCustom

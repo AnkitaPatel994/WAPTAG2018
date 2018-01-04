@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import com.ankita.waptag2018.BaseAppCompatActivity;
 import com.ankita.waptag2018.R;
 import com.ankita.waptag2018.login.LoginActivity;
+import com.ankita.waptag2018.main.MainActivity;
 
 public class SplashActivity extends BaseAppCompatActivity {
 
@@ -31,7 +32,8 @@ public class SplashActivity extends BaseAppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                /*startActivity(new Intent(SplashActivity.this, LoginActivity.class));*/
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 finish();
             }
         }, 3500);

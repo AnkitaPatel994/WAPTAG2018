@@ -88,7 +88,7 @@ public class TransportationActivity extends BaseAppCompatActivity {
                     for (int i=0;i<Advertise.length();i++)
                     {
                         JSONObject jo=Advertise.getJSONObject(i);
-                        HashMap<String,String > hashMap = new HashMap<>();
+                        HashMap<String,String> hashMap = new HashMap<>();
 
                         String image = jo.getString("image");
 

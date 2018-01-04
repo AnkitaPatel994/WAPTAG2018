@@ -39,7 +39,7 @@ import java.util.Map;
 public class LoginActivity extends BaseAppCompatActivity {
 
     private ImageView imgAdv;
-    private EditText txtName, txtMobile, txtEmail, txtCompany,txtStall_no,txtLocation;
+    private EditText txtName, txtMobile, txtEmail, txtCompany,txtLocation;
     private TextView txtLogin;
     private Button txtSkip;
     private Bundle bundle;
@@ -73,7 +73,6 @@ public class LoginActivity extends BaseAppCompatActivity {
         txtMobile = (EditText) findViewById(R.id.txtNumber);
         txtEmail = (EditText) findViewById(R.id.txtEmail);
         txtCompany = (EditText) findViewById(R.id.txtCompany);
-        txtStall_no = (EditText) findViewById(R.id.txtStall_no);
         txtLocation = (EditText) findViewById(R.id.txtLocation);
         txtLogin = (TextView) findViewById(R.id.txtLogin);
         txtSkip = (Button) findViewById(R.id.txtSkip);
@@ -166,7 +165,6 @@ public class LoginActivity extends BaseAppCompatActivity {
                 joLogin.put("name", txtName.getText().toString());
                 joLogin.put("mobile", txtMobile.getText().toString());
                 joLogin.put("email", txtEmail.getText().toString());
-                joLogin.put("stall_no", txtStall_no.getText().toString());
                 joLogin.put("location", txtLocation.getText().toString());
                 Postdata postdata=new Postdata();
                 String pdLogin=postdata.post(WEB_KEY + API_EXHIBITOR_REGISTRATION,joLogin.toString());
@@ -228,9 +226,6 @@ public class LoginActivity extends BaseAppCompatActivity {
             status = false;
         } else if (txtCompany.getText().toString().equals("")) {
             preToast("Enter Company name");
-            status = false;
-        }else if (txtStall_no.getText().toString().equals("")) {
-            preToast("Enter Stall No");
             status = false;
         }else if (txtLocation.getText().toString().equals("")) {
             preToast("Enter Location");

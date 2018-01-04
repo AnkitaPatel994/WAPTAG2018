@@ -15,8 +15,6 @@ public interface Constant {
     public static final String PREF_EXHIBITORS_DATE = "pref_waptag_exhibitors_date";
     public static final String PREF_EXHIBITOR_LIST = "pref_waptag_exhibitor_list";
 
-
-
     public static final String WEB_KEY = "http://waptag.momentswedding.in/webservices/";
     public static final String API_FETCH_ATTRACTIONS ="fetchAttractions";
     public static final String API_FETCH_VIDEO ="fetchVideo";

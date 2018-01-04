@@ -36,7 +36,6 @@
     <string name="verify_code_not_match">Code does not match</string>
     <string name="resend_sms">Resend SMS</string>
     <string name="resend">Resend</string>
-    <string name="visitor_register_text">Thank you for registering for WAPTAG Expo 2018. You will receive an SMS that you need to show at the registration desk on 3-4-5 March 2018 at Mahatma Mandir, Gandhinagar.</string>
-
+    <string name="visitor_register_text">Thank you for registering for WAPTAG Expo 2018. You will receive an SMS that you need to show at the registration desk on 13-14-15 April 2018 at Mahatma Mandir, Gandhinagar.</string>
 
 </resources>

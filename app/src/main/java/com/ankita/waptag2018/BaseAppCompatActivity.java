@@ -75,7 +75,8 @@ public class BaseAppCompatActivity extends AppCompatActivity implements Constant
         imagesToShow.add(R.drawable.ad5);
         imagesToShow.add(R.drawable.ad6);
         imagesToShow.add(R.drawable.ad7);
-        imagesToShow.add(R.drawable.ad9);
+        imagesToShow.add(R.drawable.ad8);
+        imagesToShow.add(R.drawable.ad11);
         imagesToShow.add(R.drawable.ad9);
         imagesToShow.add(R.drawable.ad10);
 

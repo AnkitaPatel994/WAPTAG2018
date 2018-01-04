@@ -193,8 +193,16 @@ public class MainActivity extends BaseAppCompatActivity {
         layout7.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-//                startActivity(new Intent(getApplicationContext(), StickerActivity.class));
-                if (getPref(PREF_LOGIN, "").equals("true")) {
+
+                if (getPref(PREF_OTP, "").equals("true"))
+                {
+                    startActivity(new Intent(getApplicationContext(), InviteActivity.class));
+                }
+                else
+                {
+                    startActivity(new Intent(getApplicationContext(), VerifyExhibitorMobileActivity.class));
+                }
+                /*if (getPref(PREF_LOGIN, "").equals("true")) {
                     if (getPref(PREF_OTP, "").equals("true")) {
                         startActivity(new Intent(getApplicationContext(), InviteActivity.class));
                     } else {
@@ -202,9 +210,10 @@ public class MainActivity extends BaseAppCompatActivity {
                     }
                 } else {
                     preToast("To invite your guests you need to login first.");
-                }
+                }*/
             }
         });
+
         layout8.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
@@ -212,6 +221,7 @@ public class MainActivity extends BaseAppCompatActivity {
 
             }
         });
+
         layout9.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
@@ -450,7 +460,7 @@ public class MainActivity extends BaseAppCompatActivity {
 //        }
 //    }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (getPref(PREF_LOGIN, "").equals(""))
             getMenuInflater().inflate(R.menu.menu_login, menu);
@@ -468,7 +478,7 @@ public class MainActivity extends BaseAppCompatActivity {
         }
 
         return super.onOptionsItemSelected(menuItem);
-    }
+    }*/
 
 
 }

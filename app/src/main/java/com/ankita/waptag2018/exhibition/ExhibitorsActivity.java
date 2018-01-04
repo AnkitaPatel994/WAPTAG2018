@@ -105,9 +105,9 @@ public class ExhibitorsActivity extends BaseAppCompatActivity {
                         String mobile = jo.getString("mobile");
                         String email = jo.getString("email");
                         String stall_no = jo.getString("stall_no");
-                        String location = jo.getString("location");
+                        String space = jo.getString("space");
 
-                        ExhibitorModel exhibitorModel = new ExhibitorModel(company_name,name,mobile,email,stall_no,location);
+                        ExhibitorModel exhibitorModel = new ExhibitorModel(company_name,name,mobile,email,stall_no,space);
                         exhibitorModelArrayList.add(exhibitorModel);
                         exhibitorModelArrayList_dummy.add(exhibitorModel);
                     }

@@ -103,6 +103,7 @@ public class VisitorsActivity extends BaseAppCompatActivity {
                 openStateDialog();
             }
         });
+
         txtBusCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,6 +111,7 @@ public class VisitorsActivity extends BaseAppCompatActivity {
                 openBusinessCategoryDialog();
             }
         });
+
         txtCountry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -169,7 +171,12 @@ public class VisitorsActivity extends BaseAppCompatActivity {
         STATE_LIST.add("Uttarakhand");
         STATE_LIST.add("West Bengal");
 
-        COUNTRY_LIST.add("Afghanistan");
+        COUNTRY_LIST.add("India");
+        COUNTRY_LIST.add("China");
+        COUNTRY_LIST.add("Taiwan");
+        COUNTRY_LIST.add("South Korea");
+
+        /*COUNTRY_LIST.add("Afghanistan");
         COUNTRY_LIST.add("Albania");
         COUNTRY_LIST.add("Algeria");
         COUNTRY_LIST.add("Andorra");
@@ -203,7 +210,6 @@ public class VisitorsActivity extends BaseAppCompatActivity {
         COUNTRY_LIST.add("Central African Republic");
         COUNTRY_LIST.add("Chad");
         COUNTRY_LIST.add("Chile");
-        COUNTRY_LIST.add("China");
         COUNTRY_LIST.add("Christmas Island");
         COUNTRY_LIST.add("Cocos (keeling) Islands");
         COUNTRY_LIST.add("Colombia");
@@ -248,7 +254,6 @@ public class VisitorsActivity extends BaseAppCompatActivity {
         COUNTRY_LIST.add("Honduras");
         COUNTRY_LIST.add("Hong Kong");
         COUNTRY_LIST.add("Hungary");
-        COUNTRY_LIST.add("India");
         COUNTRY_LIST.add("Indonesia");
         COUNTRY_LIST.add("Iran");
         COUNTRY_LIST.add("Iraq");
@@ -370,7 +375,7 @@ public class VisitorsActivity extends BaseAppCompatActivity {
         COUNTRY_LIST.add("Wallis And Futuna");
         COUNTRY_LIST.add("Yemen");
         COUNTRY_LIST.add("Zambia");
-        COUNTRY_LIST.add("Zimbabwe");
+        COUNTRY_LIST.add("Zimbabwe");*/
 
     }
 

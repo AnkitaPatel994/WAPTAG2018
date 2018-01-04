@@ -5,7 +5,7 @@ package com.ankita.waptag2018.model;
  */
 public class ExhibitorModel {
 
-    String company_name,name,mobile,email,stall_no,location;
+    String company_name,name,mobile,email,stall_no,space;
 
     public String getCompanyName() {
         return company_name;
@@ -47,21 +47,20 @@ public class ExhibitorModel {
         this.stall_no = stall_no;
     }
 
-    public String getLocation() {
-        return location;
+    public String getSpace() {
+        return space;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setSpace(String space) {
+        this.space = space;
     }
 
-    public ExhibitorModel(String company_name, String name, String mobile, String email, String stall_no, String location) {
+    public ExhibitorModel(String company_name, String name, String mobile, String email, String stall_no, String space) {
         this.company_name = company_name;
         this.name = name;
         this.mobile = mobile;
-
         this.email = email;
         this.stall_no = stall_no;
-        this.location = location;
+        this.space = space;
     }
 }
