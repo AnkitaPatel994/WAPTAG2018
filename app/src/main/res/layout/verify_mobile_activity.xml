@@ -51,5 +51,15 @@
         android:textCursorDrawable="@null"
         android:textSize="16dp" />
 
+    <com.ankita.waptag2018.custom.TextViewCustomBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Enter Mobile Number which you have given for Stall Booking."
+        android:textColor="@color/grey_white_1000"
+        android:textSize="18dp" />
 
 </LinearLayout>

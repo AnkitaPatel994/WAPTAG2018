@@ -36,7 +36,7 @@ public class StickerActivity extends BaseAppCompatActivity {
     private Bitmap bmp;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.temp_test);

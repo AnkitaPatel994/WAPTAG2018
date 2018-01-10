@@ -50,4 +50,5 @@ dependencies {
 
     implementation files('libs/okio-1.6.0.jar')
     implementation files('libs/okhttp-2.5.0.jar')
+    compile 'org.jetbrains:annotations-java5:15.0'
 }
