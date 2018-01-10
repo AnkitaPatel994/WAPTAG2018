@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
@@ -32,7 +33,7 @@ public class StickerActivity extends BaseAppCompatActivity {
 
     private LinearLayout mScrollView;
     private ImageView imgLogo;
-    private TextView txtName, txtStall;
+    private TextView txtName, txtStall,txtB,txtinviteVisitStall;
     private Bitmap bmp;
 
     @Override
@@ -53,6 +54,16 @@ public class StickerActivity extends BaseAppCompatActivity {
         imgLogo = (ImageView) findViewById(R.id.imgLogo);
         txtName = (TextView) findViewById(R.id.txtName);
         txtStall = (TextView) findViewById(R.id.txtStall);
+        txtB = (TextView) findViewById(R.id.txtB);
+        txtinviteVisitStall = (TextView) findViewById(R.id.txtinviteVisitStall);
+
+        Typeface faceBd=Typeface.createFromAsset(getAssets(),"fonts/Aller_Bd.ttf");
+        txtB.setTypeface(faceBd);
+        txtName.setTypeface(faceBd);
+        txtStall.setTypeface(faceBd);
+
+        Typeface faceRg=Typeface.createFromAsset(getAssets(),"fonts/Aller_Rg.ttf");
+        txtinviteVisitStall.setTypeface(faceRg);
 
         imgLogo.setImageBitmap(bmp);
         txtName.setText(getPref(PREF_STICKER_COMPANY, ""));
