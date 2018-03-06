@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
-                android:text="13 APR 2017"
+                android:text="13 APR 2018"
                 android:textColor="@color/grey_900"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
-                android:text="14 APR 2017"
+                android:text="14 APR 2018"
                 android:textColor="@color/grey_900"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -184,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
-                android:text="15 APR 2017"
+                android:text="15 APR 2018"
                 android:textColor="@color/grey_900"
                 android:textSize="20dp"
                 android:textStyle="bold" />
