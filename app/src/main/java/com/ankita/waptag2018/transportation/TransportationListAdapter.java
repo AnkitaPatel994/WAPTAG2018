@@ -15,6 +15,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -56,7 +57,7 @@ class TransportationListAdapter extends RecyclerView.Adapter<TransportationListA
         /*holder.tvTransportationTitle.setText(title);
         holder.tvTransportationDescription.setText(description);*/
 
-        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+        /*DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheOnDisc(true).cacheInMemory(true)
                 .imageScaleType(ImageScaleType.EXACTLY)
                 .displayer(new FadeInBitmapDisplayer(300)).build();
@@ -74,7 +75,9 @@ class TransportationListAdapter extends RecyclerView.Adapter<TransportationListA
                 .showImageForEmptyUri(fallback)
                 .showImageOnFail(fallback)
                 .showImageOnLoading(fallback).build();
-        imageLoader.displayImage(image,holder.ivTransportation, options);
+        imageLoader.displayImage(image,holder.ivTransportation, options);*/
+
+        Picasso.with(context).load(image).into(holder.ivTransportation);
 
     }
 

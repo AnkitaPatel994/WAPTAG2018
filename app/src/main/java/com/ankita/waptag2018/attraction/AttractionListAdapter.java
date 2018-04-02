@@ -15,6 +15,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -52,7 +53,7 @@ class AttractionListAdapter extends RecyclerView.Adapter<AttractionListAdapter.V
 
         holder.txtAttraction.setText(title);
 
-        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+        /*DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheOnDisc(true).cacheInMemory(true)
                 .imageScaleType(ImageScaleType.EXACTLY)
                 .displayer(new FadeInBitmapDisplayer(300)).build();
@@ -70,7 +71,9 @@ class AttractionListAdapter extends RecyclerView.Adapter<AttractionListAdapter.V
                 .showImageForEmptyUri(fallback)
                 .showImageOnFail(fallback)
                 .showImageOnLoading(fallback).build();
-        imageLoader.displayImage(image,holder.imgAttraction, options);
+        imageLoader.displayImage(image,holder.imgAttraction, options);*/
+
+        Picasso.with(context).load(image).into(holder.imgAttraction);
 
     }
 

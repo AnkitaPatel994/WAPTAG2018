@@ -2,14 +2,15 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.ankita.waptag2018"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 7
+        versionName "1.0.7"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -21,6 +22,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:26.+'
@@ -45,10 +47,12 @@ dependencies {
     compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
     //FORCE UPDATE
     compile 'com.github.jrvansuita:CheckNewAppVersionAvailable:v1.0.0'
-
+    compile 'com.android.support:multidex:1.0.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-
     implementation files('libs/okio-1.6.0.jar')
     implementation files('libs/okhttp-2.5.0.jar')
     compile 'org.jetbrains:annotations-java5:15.0'
+    implementation files('libs/picasso-2.5.2.jar')
+
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }

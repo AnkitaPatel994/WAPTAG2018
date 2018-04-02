@@ -58,7 +58,8 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:background="@android:color/transparent" />
+                        android:background="@android:color/transparent"
+                        android:id="@+id/view" />
 
                 </com.andexert.library.RippleView>
 
@@ -89,7 +90,7 @@
                     <ImageView
                         android:id="@+id/img2"
                         style="@style/main_screen_image"
-                        android:padding="12dp"
+                        android:padding="5dp"
                         android:src="@drawable/ic_layout" />
 
                     <com.ankita.waptag2018.custom.TextViewCustom
@@ -118,8 +119,6 @@
                     <ImageView
                         android:id="@+id/img3"
                         style="@style/main_screen_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:src="@drawable/ic_exhibitor" />
 
                     <com.ankita.waptag2018.custom.TextViewCustom
@@ -159,8 +158,6 @@
 
                     <ImageView
                         android:id="@+id/img6"
-                        android:layout_height="75dp"
-                        android:layout_width="75dp"
                         style="@style/main_screen_image"
                         android:src="@drawable/ic_sponsors" />
 
@@ -184,7 +181,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginBottom="6dp"
                 android:layout_marginLeft="6dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
@@ -225,13 +221,6 @@
 
                 </com.andexert.library.RippleView>
 
-                <View
-                    android:layout_width="0.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@android:color/transparent" />
-
                 <com.andexert.library.RippleView
                     android:id="@+id/layout8"
                     style="@style/main_screen_layout"
@@ -248,8 +237,45 @@
                         android:layout_below="@+id/img8"
                         android:text="CONTACT US" />
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/grey_white_1000" />
+
                 </com.andexert.library.RippleView>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/layout10"
+                    style="@style/main_screen_layout"
+                    card_view:rv_color="@color/colorPrimary"
+                    card_view:rv_rippleDuration="200">
+
+                    <com.ankita.waptag2018.custom.TextViewCustom
+                        style="@style/main_screen_text"
+                        android:textSize="15dp"
+                        android:text="EXHIBITORS DIRECTORY" />
+
+                </com.andexert.library.RippleView>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
         </LinearLayout>

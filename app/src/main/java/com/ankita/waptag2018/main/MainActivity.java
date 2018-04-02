@@ -24,6 +24,7 @@ import com.ankita.waptag2018.attraction.AttractionActivity;
 import com.ankita.waptag2018.contactus.ContactUsActivity;
 import com.ankita.waptag2018.custom.AppRater;
 import com.ankita.waptag2018.custom.SwitchAnimationUtil;
+import com.ankita.waptag2018.directory.ExhibitorsDirectoryActivity;
 import com.ankita.waptag2018.event.EventActivity;
 import com.ankita.waptag2018.exhibition.ExhibitorsActivity;
 import com.ankita.waptag2018.invite.InviteActivity;
@@ -45,6 +46,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Locale;
 
 /**
  * Created by qlooit-9 on 9/11/16.
@@ -52,7 +54,7 @@ import java.net.URLConnection;
 public class MainActivity extends BaseAppCompatActivity {
 
     private ImageView imgAdv;
-    private RippleView layout1, layout2, layout3, layout4, layout5, layout6, layout7, layout8, layout9;
+    private RippleView layout1, layout2, layout3, layout4, layout5, layout6, layout7, layout8, layout9, layout10;
     private AlertDialog dialog;
 
 
@@ -127,6 +129,7 @@ public class MainActivity extends BaseAppCompatActivity {
         layout7 = (RippleView) findViewById(R.id.layout7);
         layout8 = (RippleView) findViewById(R.id.layout8);
         layout9 = (RippleView) findViewById(R.id.layout9);
+        layout10 = (RippleView) findViewById(R.id.layout10);
         imgAdv = (ImageView) findViewById(R.id.imgAdv);
 
         //CHANGE GIF ADS-----------------
@@ -229,6 +232,28 @@ public class MainActivity extends BaseAppCompatActivity {
             }
         });
 
+        layout10.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+
+                if (isNetworkAvailable(getApplicationContext())){
+                    String pdfUrl = "http://waptag.momentswedding.in/html/document/Coming-soon.pdf";
+                    callHtmlServicePdf(pdfUrl);
+                }
+                else {
+                    preToast(getString(R.string.no_internet_connection));
+                }
+            }
+        });
+
+    }
+
+    private void callHtmlServicePdf(String pdfUrl) {
+        if (isNetworkAvailable(getApplicationContext())) {
+            new DownloadPdfFile().execute(pdfUrl);
+        } else {
+            preToast(getString(R.string.no_internet_connection));
+        }
     }
 
 
@@ -381,106 +406,78 @@ public class MainActivity extends BaseAppCompatActivity {
         }
     }
 
+    class DownloadPdfFile extends AsyncTask<String, Integer, Long> {
+        ProgressDialog mProgressDialog = new ProgressDialog(MainActivity.this);// Change Mainactivity.this with your activity name.
+        private String PATH;
+        private String targetFileName;
 
-//    private class DownloadHtml extends AsyncTask {
-//
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//            startDialog();
-//        }
-//
-//        @Override
-//        protected Object doInBackground(Object[] params) {
-//            String html = "";
-//            String url = "http://192.168.0.114/webview/index.html";
-//            HttpClient client = new DefaultHttpClient();
-//            HttpGet request = new HttpGet(url);
-//            HttpResponse response = null;
-//            try {
-//                response = client.execute(request);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            InputStream in = null;
-//            try {
-//                in = response.getEntity().getContent();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-//            StringBuilder str = new StringBuilder();
-//            String line = null;
-//            try {
-//                while ((line = reader.readLine()) != null) {
-//                    str.append(line);
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            try {
-//                in.close();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            html = str.toString();
-//
-//            String fileName = "layout.jpg";
-//            String PATH = Environment.getExternalStorageDirectory() + "/WAPTAG/";
-//            File folder = new File(PATH);
-//            File file = new File(PATH + fileName);
-//            if (folder.exists()) {
-//                folder.delete();
-//            } else {
-//                folder.mkdirs();
-//            }
-//            try {
-//                file.createNewFile();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            try {
-//                FileOutputStream out = new FileOutputStream(file);
-//                byte[] data = html.getBytes();
-//                out.write(data);
-//                out.close();
-//            } catch (FileNotFoundException e) {
-//                e.printStackTrace();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            return html;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(Object o) {
-//            super.onPostExecute(o);
-//            closeDialog();
-//            startActivity(new Intent(getApplicationContext(), LayoutActivity.class));
-//        }
-//    }
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mProgressDialog.setMessage("Downloading WAPTAG Exhibitors Directory");
+            mProgressDialog.setIndeterminate(false);
+            mProgressDialog.setMax(100);
+            mProgressDialog.setCancelable(false);
+            mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            mProgressDialog.show();
+        }
 
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        if (getPref(PREF_LOGIN, "").equals(""))
-            getMenuInflater().inflate(R.menu.menu_login, menu);
-        return true;
-    }
+        @Override
+        protected Long doInBackground(String... aurl) {
+            int count;
+            try {
+                URL url = new URL((String) aurl[0]);
+                URLConnection connection = url.openConnection();
+                connection.connect();
+                InputStream input = new BufferedInputStream(url.openStream());
+                int lenghtOfFile = connection.getContentLength();
+                targetFileName = "Coming-soon.pdf";
+                PATH = Environment.getExternalStorageDirectory() + "/WAPTAG/";
+                File folder = new File(PATH);
+                File file = new File(PATH + targetFileName);
+                if (!folder.exists()) {
+                    folder.mkdirs();
+                }
+                file.createNewFile();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        if (getPref(PREF_LOGIN, "").equals("")) {
-            if (menuItem.getItemId() == R.id.action_login) {
-                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-                i.putExtra("Nikhil", "");
-                startActivity(i);
+                OutputStream output = new FileOutputStream(PATH + targetFileName);
+                byte data[] = new byte[1024];
+                long total = 0;
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    publishProgress((int) (total * 100 / lenghtOfFile));
+                    output.write(data, 0, count);
+                }
+                output.flush();
+                output.close();
+                input.close();
+            } catch (Exception e) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mProgressDialog.setMessage("Download Failed.\nPlease try again");
+                        mProgressDialog.setCancelable(true);
+
+                    }
+                });
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        protected void onProgressUpdate(Integer... progress) {
+            mProgressDialog.setProgress(progress[0]);
+            if (mProgressDialog.getProgress() == mProgressDialog.getMax()) {
+                mProgressDialog.dismiss();
             }
         }
 
-        return super.onOptionsItemSelected(menuItem);
-    }*/
-
-
+        @Override
+        protected void onPostExecute(Long aLong) {
+            super.onPostExecute(aLong);
+            startActivity(new Intent(getApplicationContext(), ExhibitorsDirectoryActivity.class));
+        }
+    }
 }
 
 
